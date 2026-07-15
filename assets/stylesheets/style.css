@@ -1,0 +1,32 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	position: relative;
+	scroll-behavior: smooth;
+}
+
+header {
+	background-color: var(--orange);
+	padding-inline: calc((100% - 1440px) / 2);
+	height: 80px;
+}
+main {
+	min-height: calc(100vh - 160px);
+	padding-inline: calc((100% - 1440px) / 2);
+	width: 100%;
+}
+footer {
+	padding-inline: calc((100% - 1440px) / 2);
+	height: 80px;
+	width: 100%;
+	background-color: var(--orange);
+	color: white;
+	text-align: center;
+	padding-top: 20px;
+	display: flex;
+	flex-direction: row;
+	gap: 30px;
+	align-items: center;
+	justify-content: center;
+}
