@@ -98,20 +98,71 @@ main {
 	border-radius: 15px;
 	display: flex;
 	flex-direction: row;
+	transition: all 0.3s ease-in-out;
+	box-shadow: 3px 2px 5px rgba(0, 0, 0, 0.15);
+	margin: 25px;
+}
+
+.food-img {
+	border-radius: 15px;
+	width: 220px;
+	height: 150px;
+	object-fit: cover;
+	margin: 15px;
+}
+
+.food-card:hover {
+	transition: all 0.3s ease-in-out;
+	box-shadow: 3px 2px 5px rgba(0, 0, 0, 0.365);
 }
 
 .food-listing {
 	display: flex;
 	flex-direction: column;
 	justify-self: flex-start;
+	padding-top: 5px;
+	padding-left: 15px;
+	font-weight: 500;
 }
 
 .price-section {
 	display: flex;
 	flex-direction: column;
 	align-items: flex-end;
-
+	justify-content: space-between;
 	margin-left: auto;
+	font-family: "Palanquin";
+	font-weight: 800;
+}
+
+.pricing {
+	font-size: 25px;
+	margin-top: 5px;
+	margin-right: 25px;
+}
+
+.add-basket-button {
+	background-color: white;
+	border: none;
+	padding: 5px;
+	margin-bottom: 25px;
+	margin-right: 25px;
+	border-radius: 15px;
+	font-family: "Palanquin";
+	font-weight: 800;
+	cursor: pointer;
+	transition: all 0.3s ease-in-out;
+}
+
+.add-basket-button:hover {
+	background-color: white;
+	padding: 8px;
+	border-radius: 15px;
+	font-family: "Palanquin";
+	font-weight: 800;
+	cursor: pointer;
+	transition: all 0.3s ease-in-out;
+	box-shadow: 5px 10px 13px rgba(0, 0, 0, 0.15);
 }
 
 footer {
