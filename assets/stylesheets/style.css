@@ -4,6 +4,7 @@
 	box-sizing: border-box;
 	position: relative;
 	scroll-behavior: smooth;
+	font-family: "Palanquin";
 }
 
 header {
@@ -16,17 +17,21 @@ main {
 	min-height: calc(100vh - 160px);
 	padding-inline: calc((100% - 1440px) / 2);
 	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
 
 .hero {
-	position: relative;
 	width: 100%;
 	height: 30vh;
 	background-image: url("/assets/media/Hero.jpg");
 	background-size: cover;
 	background-position: center 85%;
 	background-repeat: no-repeat;
+	margin-bottom: 140px;
 }
+
 .burger-logo-container {
 	background-color: var(--orange-light);
 	border-radius: 50%;
@@ -41,10 +46,72 @@ main {
 	align-items: center;
 	box-shadow: 5px 10px 13px rgba(0, 0, 0, 0.15);
 }
+
 .burger-logo {
 	border-radius: 50%;
 	height: 190px;
 	width: 190px;
+}
+
+.title-container {
+	border: 1px solid red;
+	text-align: center;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+	max-width: 550px;
+
+	h1 {
+		color: var(--orange);
+		font-family: "Palanquin Dark";
+	}
+	.h1-secondary-color-class {
+		color: black;
+	}
+}
+
+.ratings {
+	background-color: var(--orange-light);
+	width: 100px;
+	border-radius: 5px;
+	padding: 2px;
+	margin-top: 5px;
+	margin-left: 15px;
+}
+
+.category-bar {
+	background-color: var(--orange);
+	color: white;
+	height: 40px;
+	width: 100%;
+	border: 1px solid black;
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+
+.food-card {
+	background-color: var(--orange-light);
+	height: 180px;
+	width: 700px;
+	border-radius: 15px;
+	display: flex;
+	flex-direction: row;
+}
+
+.food-listing {
+	display: flex;
+	flex-direction: column;
+	justify-self: flex-start;
+}
+
+.price-section {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+
+	margin-left: auto;
 }
 
 footer {
