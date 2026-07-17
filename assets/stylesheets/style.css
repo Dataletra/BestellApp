@@ -93,7 +93,7 @@ main {
 
 .food-card {
 	background-color: var(--orange-light);
-	height: 180px;
+	height: 150px;
 	width: 700px;
 	border-radius: 15px;
 	display: flex;
@@ -106,7 +106,7 @@ main {
 .food-img {
 	border-radius: 15px;
 	width: 220px;
-	height: 150px;
+	height: 120px;
 	object-fit: cover;
 	margin: 15px;
 }
