@@ -17,7 +17,7 @@ let foodItems = [
         ]
     },
     {
-        category: "Pizza",
+        category: "Pizzas",
         items: [
             {
                 foodTitle: "Pizza 1",
