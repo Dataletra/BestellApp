@@ -80,7 +80,10 @@ main {
 	margin-top: 5px;
 	margin-left: 15px;
 }
-
+.food-section {
+	padding-left: 50px;
+	align-self: flex-start;
+}
 .category-bar {
 	background-color: var(--orange);
 	color: white;
@@ -188,7 +191,7 @@ footer {
 	justify-content: center;
 }
 
-@media screen and (max-width: 770px) {
+@media screen and (max-width: 805px) {
 	.food-card {
 		width: 600px;
 	}
@@ -204,7 +207,7 @@ footer {
 		}
 	}
 }
-@media screen and (max-width: 666px) {
+@media screen and (max-width: 708px) {
 	.food-card {
 		width: 500px;
 	}
