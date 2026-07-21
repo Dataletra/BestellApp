@@ -1,4 +1,5 @@
-
+let basket = [];
+let sum = 0;
 
 function renderStoreListing() {
     let foodSectionRef = "";
@@ -23,6 +24,14 @@ function renderStoreListing() {
 renderStoreListing();
 
 function addToBasket(categoryID, itemID) {
-    console.log(foodItems[categoryID].items[itemID]);
-}
+    basket.push(foodItems[categoryID].items[itemID]);
+    getSumBasket();
+    console.log(sum);
 
+}
+function getSumBasket() {
+    for (let i = 0; i < basket.length; i++) {
+        console.log(basket);
+        sum += basket[i].foodPrice;
+    }
+}

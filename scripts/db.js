@@ -5,25 +5,25 @@ let foodItems = [
             {
                 foodTitle: "Veggie mushroom black burger",
                 foodDescription: "Mixed green salad, Tomatoes, Edamame, Mushrooms",
-                foodPrice: "15,90",
+                foodPrice: 15.90,
                 foodImageFileName: "veggieMushroomBurger.jpg"
             },
             {
                 foodTitle: "All meat burger",
-                foodDescription: "Beef, Bacon, Dill pickles, Smoked cheese, Ketchup, BBQ souse",
-                foodPrice: "15,90",
+                foodDescription: "Beef, Bacon, Dill pickles, Smoked cheese, Ketchup, BBQ sauce",
+                foodPrice: 15.90,
                 foodImageFileName: "meatburger.jpg"
             },
             {
                 foodTitle: "Beef red burger",
                 foodDescription: "Beef, Cheese, Tomatoes, Lettuce, Onion",
-                foodPrice: "14,90",
+                foodPrice: 14.90,
                 foodImageFileName: "redburger.jpg"
             },
             {
-                foodTitle: "Blg Chicken burger",
-                foodDescription: "Chicken, Cheese, Tomatoes, Lettuce, Onion, Bell pepper, ",
-                foodPrice: "15,90",
+                foodTitle: "Big Chicken burger",
+                foodDescription: "Chicken, Cheese, Tomatoes, Lettuce, Onion, Bell pepper",
+                foodPrice: 15.90,
                 foodImageFileName: "chickenburger.jpg"
             }
         ]
@@ -33,26 +33,26 @@ let foodItems = [
         items: [
             {
                 foodTitle: "Pizza Margherita",
-                foodDescription: "Tomato Sauce, Mozarella",
-                foodPrice: "11,90",
+                foodDescription: "Tomato Sauce, Mozzarella",
+                foodPrice: 11.90,
                 foodImageFileName: "pizzaMargherita.jpg"
             },
             {
                 foodTitle: "Pizza Chorizo",
                 foodDescription: "Tomato slices, Mozzarella, Chorizo",
-                foodPrice: "13,90",
+                foodPrice: 13.90,
                 foodImageFileName: "pizzaChorizo.jpg"
             },
             {
                 foodTitle: "Funghi",
                 foodDescription: "Red onion, Olives, Button Mushrooms, Mozzarella",
-                foodPrice: "13,90",
+                foodPrice: 13.90,
                 foodImageFileName: "pizzaFunghi.jpg"
             },
             {
                 foodTitle: "Quattro Formaggi with Chicken",
-                foodDescription: "Chicken, Mozzarella, Gorgonzola, Fontina,  Parmigiano Reggiano",
-                foodPrice: "13,90",
+                foodDescription: "Chicken, Mozzarella, Gorgonzola, Fontina, Parmigiano Reggiano",
+                foodPrice: 13.90,
                 foodImageFileName: "pizzaFormaggiChicken.jpg"
             }
         ]
@@ -63,25 +63,25 @@ let foodItems = [
             {
                 foodTitle: "Warm beef arugula salad",
                 foodDescription: "Beef, Arugula, Field salad, Greek feta, Cherry tomatoes, Sun-dried Tomatoes, Balsamic-vinegar dressing",
-                foodPrice: "16,90",
+                foodPrice: 16.90,
                 foodImageFileName: "saladBeefArugula.jpg"
             },
             {
                 foodTitle: "Mini green Salad",
                 foodDescription: "Green salad, Cucumber, Carrots, Parsley, Radishes",
-                foodPrice: "7,90",
+                foodPrice: 7.90,
                 foodImageFileName: "saladMini.jpg"
             },
             {
                 foodTitle: "Green Salad with sea food",
                 foodDescription: "Mixed greens, Cherry tomatoes, Red onion, Mussels, Squid rings, Shrimp, Dijon mustard-lemon dressing with dill",
-                foodPrice: "16,90",
+                foodPrice: 16.90,
                 foodImageFileName: "saladSeafood.jpg"
             },
             {
                 foodTitle: "Vegan green salad with tofu",
                 foodDescription: "Green salad, Cherry tomatoes, Cucumber, Baby spinach, Edamame, Radishes, Bittercress, Tofu, Peanuts",
-                foodPrice: "14,90",
+                foodPrice: 14.90,
                 foodImageFileName: "saladTofu.jpg"
             }
         ]

@@ -7,7 +7,7 @@ function renderFoodCard(categoryID, itemID) {
                 <div class="food-description"><p>${foodItems[categoryID].items[itemID].foodDescription}</p></div>
             </div>
             <div class="price-section">
-                <p class="pricing">${foodItems[categoryID].items[itemID].foodPrice}€</p>
+                <p class="pricing">${foodItems[categoryID].items[itemID].foodPrice.toFixed(2).replace('.', ',')}€</p>
                 <button class="add-basket-button" onclick="addToBasket(${categoryID},${itemID})"><p>Add to basket</p></button>
             </div>
         </div>
