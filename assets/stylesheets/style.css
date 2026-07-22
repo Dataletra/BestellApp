@@ -54,7 +54,6 @@ main {
 }
 
 .title-container {
-	border: 1px solid red;
 	text-align: center;
 	display: flex;
 	flex-direction: row;
@@ -71,7 +70,10 @@ main {
 		color: black;
 	}
 }
-
+.black-star {
+	width: 20px;
+	top: 3px;
+}
 .ratings {
 	background-color: var(--orange-light);
 	width: 100px;
@@ -84,14 +86,34 @@ main {
 	padding-left: 50px;
 	align-self: flex-start;
 }
+.category-bar-icon {
+	height: 80px;
+	width: 80px;
+	object-fit: contain;
+	top: -15px;
+	margin-left: 150px;
+}
 .category-bar {
 	background-color: var(--orange);
 	color: white;
-	height: 40px;
+	height: 50px;
 	width: 100%;
 	border: 1px solid black;
 	margin-top: 30px;
 	margin-bottom: 30px;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: flex-start;
+	font-family: "Palanquin";
+	font-weight: 700;
+	font-size: 30px;
+	text-align: top;
+	vertical-align: center;
+}
+.category-bar-title {
+	padding-bottom: 5px;
+	padding-left: 15px;
 }
 
 .food-card {
