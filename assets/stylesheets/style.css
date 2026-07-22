@@ -7,6 +7,10 @@
 	font-family: "Palanquin";
 }
 
+body {
+	overflow-x: hidden;
+}
+
 header {
 	background-color: var(--orange);
 	padding-inline: calc((100% - 1440px) / 2);
@@ -205,13 +209,6 @@ main {
 
 .d-none {
 	display: none;
-}
-
-.basket-modal {
-	border: none;
-	background-color: #ffffff00;
-	position: sticky;
-	top: 0;
 }
 
 #basket {

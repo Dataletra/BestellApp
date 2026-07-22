@@ -1,7 +1,7 @@
 let basket = [];
 let sum = 0;
 const basketRef = document.getElementById("basket");
-const basketItemRef = document.getElementById("basket-item-container")
+const basketItemRef = document.getElementById("basket-item-container");
 
 //TODO
 // fix position sticky on basket
@@ -32,25 +32,34 @@ function renderStoreListing() {
     }
 }
 
-function openBasket() {
-    renderBasketItem();
-}
 
 
-renderStoreListing();
-openBasket();
 
 function addToBasket(categoryID, itemID) {
-    basket.push(foodItems[categoryID].items[itemID]);
-    getSumBasket();
-    console.log(sum);
-    openBasket();
+    foodItems[categoryID].items[itemID].amount++
+    if (foodItems[categoryID].items[itemID].amount == 1) {
+        renderBasketItem();
+    } else {
+        let basketItemAmountId = document.getElementById(`basket-item-amount-id` + categoryID + "_" + itemID);
+        let basketItemPriceId = document.getElementById(`basket-item-price-id` + categoryID + "_" + itemID);
+        basketItemAmountId.innerHTML = /*html*/`Amount: ${foodItems[categoryID].items[itemID].amount}`;
+        basketItemPriceId.innerHTML = /*html*/`$${getPrice(categoryID, itemID)}`;
+    }
+}
+
+function getPrice(categoryID, itemID) {
+    let amount = foodItems[categoryID].items[itemID].amount;
+    return amount * foodItems[categoryID].items[itemID].foodPrice;
 }
 
 function renderBasketItem() {
-    for (let i = 0; i < basket.length; i++) {
-        basketItemRef.innerHTML += renderItemInBasket(i)
-        console.log(basket[i].foodTitle);
+    basketItemRef.innerHTML = "";
+    for (let categoryID = 0; categoryID < foodItems.length; categoryID++) {
+        for (let itemID = 0; itemID < foodItems[categoryID].items.length; itemID++) {
+            if (foodItems[categoryID].items[itemID].amount > 0) {
+                basketItemRef.innerHTML += renderItemInBasket(categoryID, itemID);
+            } else console.log("asd");
+        }
     }
 }
 
@@ -60,3 +69,5 @@ function getSumBasket() {
         sum += basket[i].foodPrice;
     }
 }
+
+renderStoreListing();

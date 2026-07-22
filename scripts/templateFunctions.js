@@ -15,21 +15,13 @@ function renderFoodCard(categoryID, itemID) {
     `
 }
 
-function renderBasket() {
-    return /*html*/`
-        <section class="basket">
-            <h3>Your Basket</h3>
-            <div id="item-container">
-                ${renderBasketItem(basket)}
-            </div>
-        </section>
-    `
-}
 
-function renderItemInBasket(i) {
+function renderItemInBasket(categoryID, itemID) {
     return /*html*/`
             <div class="item">
-                <p>${basket[i].foodTitle}</p>
+                <p>${foodItems[categoryID].items[itemID].foodTitle}</p>
+                <p id="basket-item-amount-id${categoryID}_${itemID}">Amount: ${foodItems[categoryID].items[itemID].amount}</p>
+                <p id="basket-item-price-id${categoryID}_${itemID}">$${foodItems[categoryID].items[itemID].foodPrice}</p>
             </div>
         `
 }
