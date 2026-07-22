@@ -61,7 +61,7 @@ main {
 	align-items: center;
 	justify-content: center;
 	max-width: 550px;
-
+	margin-bottom: 50px;
 	h1 {
 		color: var(--orange);
 		font-family: "Palanquin Dark";
@@ -70,10 +70,12 @@ main {
 		color: black;
 	}
 }
+
 .black-star {
 	width: 20px;
 	top: 3px;
 }
+
 .ratings {
 	background-color: var(--orange-light);
 	width: 100px;
@@ -82,10 +84,12 @@ main {
 	margin-top: 5px;
 	margin-left: 15px;
 }
+
 .food-section {
 	padding-left: 50px;
 	align-self: flex-start;
 }
+
 .category-bar-icon {
 	height: 80px;
 	width: 80px;
@@ -93,12 +97,12 @@ main {
 	top: -15px;
 	margin-left: 150px;
 }
+
 .category-bar {
 	background-color: var(--orange);
 	color: white;
 	height: 50px;
 	width: 100%;
-	border: 1px solid black;
 	margin-top: 30px;
 	margin-bottom: 30px;
 	display: flex;
@@ -111,6 +115,7 @@ main {
 	text-align: top;
 	vertical-align: center;
 }
+
 .category-bar-title {
 	padding-bottom: 5px;
 	padding-left: 15px;
@@ -198,6 +203,44 @@ main {
 	box-shadow: 5px 10px 13px rgba(0, 0, 0, 0.15);
 }
 
+.d-none {
+	display: none;
+}
+
+.basket-modal {
+	border: none;
+	background-color: #ffffff00;
+	position: sticky;
+	top: 0;
+}
+
+#basket {
+	background-color: #363534;
+	height: 800px;
+	width: 430px;
+	border-radius: 30px 0px 0px 30px;
+	position: sticky;
+	top: 0;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+#item-container {
+	width: 100%;
+	height: 500px;
+	border: solid 1px red;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.item {
+	width: 95%;
+	height: 150px;
+	border: solid 1px rgb(0, 255, 68);
+}
+
 footer {
 	padding-inline: calc((100% - 1440px) / 2);
 	height: 80px;
@@ -229,6 +272,7 @@ footer {
 		}
 	}
 }
+
 @media screen and (max-width: 708px) {
 	.food-card {
 		width: 500px;

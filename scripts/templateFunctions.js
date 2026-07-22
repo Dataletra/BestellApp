@@ -1,3 +1,4 @@
+
 function renderFoodCard(categoryID, itemID) {
     return /*html*/`
         <div class="food-card">
@@ -12,4 +13,23 @@ function renderFoodCard(categoryID, itemID) {
             </div>
         </div>
     `
+}
+
+function renderBasket() {
+    return /*html*/`
+        <section class="basket">
+            <h3>Your Basket</h3>
+            <div id="item-container">
+                ${renderBasketItem(basket)}
+            </div>
+        </section>
+    `
+}
+
+function renderItemInBasket(i) {
+    return /*html*/`
+            <div class="item">
+                <p>${basket[i].foodTitle}</p>
+            </div>
+        `
 }
