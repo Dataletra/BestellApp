@@ -26,6 +26,23 @@ main {
 	align-items: center;
 }
 
+.content-wrapper {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	width: 100%;
+}
+
+.content {
+	width: calc(100% - 380px);
+	padding: 0px;
+	border: solid 3px blue;
+}
+
+.basket-wrapper {
+	width: 380px;
+	border: solid 3px red;
+}
 .hero {
 	width: 100%;
 	height: 30vh;
@@ -92,6 +109,7 @@ main {
 .food-section {
 	padding-left: 50px;
 	align-self: flex-start;
+	transition: all 0.3s ease-in-out;
 }
 
 .category-bar-icon {
@@ -100,6 +118,7 @@ main {
 	object-fit: contain;
 	top: -15px;
 	margin-left: 150px;
+	transition: all 0.3s ease-in-out;
 }
 
 .category-bar {
@@ -217,22 +236,23 @@ main {
 	color: var(--orange-light);
 	font-size: 25px;
 }
+
 #basket {
 	background-color: #363534;
 	height: 800px;
-	width: 430px;
+	width: 380px;
 	border-radius: 30px 0px 0px 30px;
 	position: sticky;
 	top: 0;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	margin-left: auto;
 }
 
 #basket-item-container {
 	width: 100%;
 	height: 470px;
-
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -319,6 +339,7 @@ main {
 	transition: all 0.3s ease-in-out;
 	cursor: pointer;
 }
+
 #buy-now-button:hover {
 	transition: all 0.3s ease-in-out;
 	background-color: var(--orange-highlight);
@@ -340,12 +361,21 @@ footer {
 	justify-content: center;
 }
 
-@media screen and (max-width: 805px) {
+@media screen and (max-width: 1220px) {
 	.food-card {
-		width: 600px;
+		width: 660px;
 	}
+	.food-section {
+		padding: 0;
+		transition: all 0.3s ease-in-out;
+	}
+	.category-bar-icon {
+		margin-left: 50px;
+		transition: all 0.3s ease-in-out;
+	}
+
 	.food-listing {
-		max-width: 200px;
+		max-width: 250px;
 		.food-title {
 			line-height: 25px;
 			margin-top: 7px;
