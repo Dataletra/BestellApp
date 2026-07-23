@@ -71,11 +71,12 @@ function subtractFromBasket(categoryID, itemID) {
     renderBasketItem();
 }
 
-
 function updateBasketPrice() {
     let updatedPrice = 0;
     subtotalRef.innerHTML = "";
     totalRef.innerHTML = "";
+    buyButtonRef.innerHTML = "Buy now";
+    let basketEmpty = true;
     for (let categoryID = 0; categoryID < foodItems.length; categoryID++) {
         for (let itemID = 0; itemID < foodItems[categoryID].items.length; itemID++) {
             if (foodItems[categoryID].items[itemID].amount > 0) {
@@ -83,8 +84,19 @@ function updateBasketPrice() {
             }
         }
     }
-    subtotalRef.innerHTML = `$${updatedPrice.toFixed(2)}`;
-    totalRef.innerHTML = `$${(updatedPrice + 5.99).toFixed(2)}`;
+    updateBasketPriceReferences(updatedPrice);
+}
+
+function updateBasketPriceReferences(updatedPrice) {
+    if (updatedPrice == 0) {
+        subtotalRef.innerHTML = `$0`;
+        totalRef.innerHTML = `$0`;
+        buyButtonRef.innerHTML = `Buy now`;
+    } else {
+        subtotalRef.innerHTML = `$${updatedPrice.toFixed(2)}`;
+        totalRef.innerHTML = `$${(updatedPrice + 5.99).toFixed(2)}`;
+        buyButtonRef.innerHTML = `Buy now (${(updatedPrice + 4.99).toFixed(2)})`;
+    }
 }
 
 renderStoreListing();

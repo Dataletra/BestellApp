@@ -307,13 +307,22 @@ main {
 #buy-now-button {
 	background-color: var(--orange);
 	color: white;
-	font-size: 20px;
+	font-size: 30px;
 	font-weight: 600;
-	border-radius: 15px;
-	padding: 10px;
+	border-radius: 50px;
+	padding: 0px;
 	width: 85%;
+	height: 60px;
 	align-self: center;
 	margin-top: 10px;
+	border: none;
+	transition: all 0.3s ease-in-out;
+	cursor: pointer;
+}
+#buy-now-button:hover {
+	transition: all 0.3s ease-in-out;
+	background-color: var(--orange-highlight);
+	box-shadow: 3px 2px 5px rgba(0, 0, 0, 0.565);
 }
 
 footer {
